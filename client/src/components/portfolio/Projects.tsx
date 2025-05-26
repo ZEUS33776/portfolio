@@ -80,7 +80,7 @@ export default function Projects() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               A showcase of my technical expertise across web development, 
-              machine learning, system design, and research.
+              machine learning and research.
             </p>
           </motion.div>
 

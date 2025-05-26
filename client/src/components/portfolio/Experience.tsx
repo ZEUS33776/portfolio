@@ -75,8 +75,7 @@ export default function Experience() {
               </span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              My professional journey spanning software engineering, academic excellence, 
-              and research contributions.
+              My professional journey spanning software engineering and academics excellence.
             </p>
           </motion.div>
 
