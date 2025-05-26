@@ -1,0 +1,265 @@
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  longDescription: string;
+  technologies: string[];
+  features: string[];
+  links: {
+    github?: string;
+    live?: string;
+    pypi?: string;
+  };
+  stats?: {
+    label: string;
+    value: string;
+  }[];
+  category: 'web' | 'ml' | 'system' | 'research';
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  position: string;
+  location: string;
+  duration: string;
+  type: 'work' | 'education';
+  achievements: string[];
+  technologies?: string[];
+  cgpa?: string;
+}
+
+export interface Skill {
+  category: string;
+  skills: string[];
+  icon: string;
+}
+
+export interface Achievement {
+  title: string;
+  description: string;
+  metric?: string;
+}
+
+export const personalInfo = {
+  name: "Arjun Deshmukh",
+  title: "Software Engineer",
+  email: "desh.arjun3@gmail.com",
+  phone: "9561135575",
+  location: "Kottayam, Kerala, India",
+  github: "github.com/ZEUS33776",
+  leetcode: "leetcode.com/u/ZEUS",
+  bio: "Passionate Software Engineer with expertise in full-stack development, AI/ML, and system design. Currently pursuing B.Tech in Computer Science at IIIT Kottayam with a CGPA of 9.06/10. Experienced in building scalable solutions and optimizing complex systems.",
+  tagline: "Building the future with code and creativity"
+};
+
+export const projects: Project[] = [
+  {
+    id: "vcs-core",
+    title: "VCS-Core",
+    description: "Distributed Version Control System",
+    longDescription: "A lightweight distributed version control system built from scratch as an open-source Python package. Implements core Git operations with advanced file tracking algorithms and comprehensive CLI interface.",
+    technologies: ["Python", "PyPI", "CLI", "File Hashing", "Git Protocol", "SHA-256"],
+    features: [
+      "100% compatibility with core Git operations",
+      "Advanced file tracking with SHA-256 hashing",
+      "Delta compression and tree data structures",
+      "15+ Git-compatible commands",
+      "40% reduced storage overhead",
+      "99.9% data integrity",
+      "Complete documentation and unit tests"
+    ],
+    links: {
+      github: "https://github.com/ZEUS33776/vcs-core",
+      pypi: "https://pypi.org/project/vcs-core/"
+    },
+    stats: [
+      { label: "Storage Reduction", value: "40%" },
+      { label: "Data Integrity", value: "99.9%" },
+      { label: "Git Commands", value: "15+" }
+    ],
+    category: "system"
+  },
+  {
+    id: "lyfline",
+    title: "Lyfline",
+    description: "AI-Powered Heart Attack Prediction",
+    longDescription: "Comprehensive heart condition prediction system combining multiple machine learning models with real-time patient monitoring capabilities and secure hospital database integration.",
+    technologies: ["Python", "Machine Learning", "React", "Node.js", "Django", "PostgreSQL"],
+    features: [
+      "87% accuracy for new patient risk assessment",
+      "97% accuracy for monitoring admitted patients",
+      "Real-time alert capabilities",
+      "25% reduction in detection time",
+      "HIPAA-compliant data protection",
+      "Role-based access control",
+      "Intuitive web-based dashboard",
+      "40% faster decision making"
+    ],
+    links: {
+      github: "https://github.com/ZEUS33776/lyfline",
+      live: "https://lyfline-demo.vercel.app"
+    },
+    stats: [
+      { label: "New Patient Accuracy", value: "87%" },
+      { label: "Admitted Patient Accuracy", value: "97%" },
+      { label: "Detection Time Reduction", value: "25%" }
+    ],
+    category: "ml"
+  },
+  {
+    id: "placement-portal",
+    title: "Institute Placement Portal",
+    description: "Modern React-based placement management system",
+    longDescription: "Comprehensive institutional placement portal with modern React architecture, featuring role-based access control and streamlined workflow management for students, coordinators, and administrators.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
+    features: [
+      "65% improvement in student application efficiency",
+      "40% increase in company participation",
+      "JWT authentication system",
+      "500+ student registrations processed",
+      "Role-based access control",
+      "50% streamlined placement workflow",
+      "Secure recruitment data protection"
+    ],
+    links: {
+      github: "https://github.com/ZEUS33776/placement-portal"
+    },
+    stats: [
+      { label: "Efficiency Improvement", value: "65%" },
+      { label: "Company Participation", value: "+40%" },
+      { label: "Students Registered", value: "500+" }
+    ],
+    category: "web"
+  },
+  {
+    id: "excel-pdf-query",
+    title: "Excel and PDF Natural Language Query System",
+    description: "RAG-powered document analysis with LLM",
+    longDescription: "Interactive system enabling natural language queries on Excel sheets and PDFs using Retrieval-Augmented Generation (RAG) with locally running Ollama and Mistral LLM.",
+    technologies: ["RAG", "Mistral LLM", "Ollama", "Python", "LangChain", "NLP"],
+    features: [
+      "Natural language document querying",
+      "Retrieval-Augmented Generation approach",
+      "Locally running Ollama and Mistral LLM",
+      "Automatic Python code generation",
+      "100+ query types supported",
+      "Statistical analysis capabilities",
+      "Semantic search functionality",
+      "Context-aware processing"
+    ],
+    links: {
+      github: "https://github.com/ZEUS33776/excel-pdf-query"
+    },
+    stats: [
+      { label: "Query Types Supported", value: "100+" },
+      { label: "Processing Method", value: "RAG" },
+      { label: "Code Generation", value: "Automatic" }
+    ],
+    category: "ml"
+  }
+];
+
+export const experience: Experience[] = [
+  {
+    id: "xcdify",
+    company: "Xcdify Solutions Private Limited",
+    position: "Software Engineering Intern",
+    location: "Bengaluru, Karnataka (Remote)",
+    duration: "Dec 2024 – Present",
+    type: "work",
+    achievements: [
+      "Engineered enterprise-grade Vehicle Routing Problem (VRP) solution optimizing logistics for 50+ vehicles",
+      "Reduced transportation costs by 20% and improved operational efficiency by 35%",
+      "Developed dbt-powered analytics platform with 10+ modular data transformation pipelines",
+      "Enhanced processing speed by 40% and enabled real-time operational insights",
+      "Implemented 50+ SQL transformations, automating workflows and reducing manual reporting overhead by 60%",
+      "Presented technical outcomes to 10+ cross-functional stakeholders across 5 agile sprints"
+    ],
+    technologies: ["Python", "dbt", "SQL", "Data Engineering", "VRP Optimization", "Analytics"]
+  },
+  {
+    id: "iiit-kottayam",
+    company: "Indian Institute of Information Technology, Kottayam",
+    position: "Bachelor of Technology in Computer Science and Engineering",
+    location: "Kottayam, Kerala",
+    duration: "Nov 2022 – March 2026",
+    type: "education",
+    cgpa: "9.06/10",
+    achievements: [
+      "Maintaining excellent academic performance with CGPA of 9.06/10",
+      "Active participation in competitive programming and algorithm optimization",
+      "Research work on Advanced Analysis of the Maximum Subarray Problem (2D)",
+      "Contributing to academic discourse on multidimensional array optimization"
+    ]
+  }
+];
+
+export const skills: Skill[] = [
+  {
+    category: "Programming Languages",
+    skills: ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "SQL", "Bash"],
+    icon: "code"
+  },
+  {
+    category: "Frontend Development",
+    skills: ["React.js", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS", "Three.js"],
+    icon: "monitor"
+  },
+  {
+    category: "Backend Development",
+    skills: ["Node.js", "Express.js", "Flask", "FastAPI", "REST APIs"],
+    icon: "server"
+  },
+  {
+    category: "Databases & Cloud",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS", "GCP", "Firebase", "Supabase"],
+    icon: "database"
+  },
+  {
+    category: "AI & Machine Learning",
+    skills: ["Scikit-Learn", "TensorFlow", "Pandas", "NumPy", "LangChain", "RAG", "NLP", "Deep Learning"],
+    icon: "brain"
+  },
+  {
+    category: "Tools & Technologies",
+    skills: ["Git", "GitHub", "Docker", "CI/CD", "Redis Queue", "DBT", "Shell Scripting"],
+    icon: "tool"
+  }
+];
+
+export const achievements: Achievement[] = [
+  {
+    title: "LeetCode Rating",
+    description: "Achieved 1752 rating, placing among top competitive programmers",
+    metric: "1752"
+  },
+  {
+    title: "Problems Solved",
+    description: "Solved 300+ problems on LeetCode and 500+ across all platforms",
+    metric: "800+"
+  },
+  {
+    title: "Contest Performance",
+    description: "Placed in top 3% among 28,000 participants in LeetCode Contest 151",
+    metric: "Top 3%"
+  },
+  {
+    title: "Open Source Contribution",
+    description: "Published VCS-Core to PyPI with 1000+ potential users worldwide",
+    metric: "1000+"
+  }
+];
+
+export const research = {
+  title: "Advanced Analysis of the Maximum Subarray Problem (2D)",
+  duration: "Oct 2023 – Nov 2023",
+  description: "Conducted rigorous analysis of the 2D maximum subarray problem, exploring optimization strategies beyond the current O(n³-ε) time complexity.",
+  achievements: [
+    "Achieved 15% runtime improvement in specific cases",
+    "Investigated theoretical limits through mathematical proofs",
+    "Produced technical report on optimization techniques",
+    "Presented research to faculty and peers"
+  ],
+  github: "https://github.com/ZEUS33776/2d-max-subarray-research"
+};
