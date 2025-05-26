@@ -11,7 +11,7 @@ import {
   Award
 } from "lucide-react";
 import { useScrollSection } from "@/hooks/useScrollSection";
-import { experience, research } from "@/lib/portfolioData";
+import { experience } from "@/lib/portfolioData";
 
 export default function Experience() {
   const ref = useScrollSection("experience");
@@ -192,75 +192,23 @@ export default function Experience() {
                               {exp.duration}
                             </Badge>
                             {exp.cgpa && (
-                              <div className="text-lg font-bold text-emerald-500">
+                              <div className="text-sm text-muted-foreground">
                                 CGPA: {exp.cgpa}
                               </div>
                             )}
                           </div>
                         </div>
 
-                        {/* Achievements */}
-                        <div className="space-y-3">
-                          {exp.achievements.map((achievement, achievementIndex) => (
-                            <div
-                              key={achievementIndex}
-                              className="flex items-start text-sm text-muted-foreground"
-                            >
-                              <Star className="w-4 h-4 mr-3 mt-0.5 text-emerald-500 shrink-0" />
-                              <span className="leading-relaxed">{achievement}</span>
-                            </div>
-                          ))}
+                        {/* Simple education description */}
+                        <div className="text-sm text-muted-foreground">
+                          <p>Currently pursuing Bachelor of Technology in Computer Science and Engineering with strong academic performance.</p>
                         </div>
                       </CardContent>
                     </Card>
                   </motion.div>
                 ))}
 
-              {/* Research Section */}
-              <motion.div
-                variants={timelineVariants}
-                className="relative lg:pl-20"
-              >
-                {/* Timeline Dot */}
-                <div className="absolute left-6 top-6 w-4 h-4 bg-purple-500 rounded-full border-4 border-background shadow-lg hidden lg:block" />
-                
-                <Card className="glass border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:shadow-xl hover:shadow-purple-500/10">
-                  <CardContent className="p-8">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
-                      <div className="flex items-start mb-4 lg:mb-0">
-                        <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mr-4 shrink-0">
-                          <Award className="w-6 h-6 text-purple-500" />
-                        </div>
-                        <div>
-                          <h3 className="text-xl font-semibold">{research.title}</h3>
-                          <p className="text-purple-500 font-medium">Research Project</p>
-                          <div className="flex items-center text-sm text-muted-foreground mt-1">
-                            <Calendar className="w-4 h-4 mr-1" />
-                            {research.duration}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
 
-                    <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {research.description}
-                    </p>
-
-                    {/* Research Achievements */}
-                    <div className="space-y-3">
-                      {research.achievements.map((achievement, index) => (
-                        <div
-                          key={index}
-                          className="flex items-start text-sm text-muted-foreground"
-                        >
-                          <TrendingUp className="w-4 h-4 mr-3 mt-0.5 text-purple-500 shrink-0" />
-                          <span className="leading-relaxed">{achievement}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
             </div>
           </div>
         </motion.div>

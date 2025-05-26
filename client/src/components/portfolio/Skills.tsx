@@ -141,26 +141,7 @@ export default function Skills() {
                         ))}
                       </motion.div>
 
-                      {/* Progress Indicator */}
-                      <div className="mt-6 pt-4 border-t border-border/50">
-                        <div className="flex items-center justify-between text-xs text-muted-foreground">
-                          <span>Proficiency</span>
-                          <span className="font-medium">Advanced</span>
-                        </div>
-                        <div className="w-full h-1.5 bg-secondary rounded-full mt-2">
-                          <motion.div
-                            className="h-full bg-gradient-to-r from-primary to-primary/60 rounded-full"
-                            initial={{ width: 0 }}
-                            whileInView={{ width: "85%" }}
-                            transition={{ 
-                              duration: 1.5, 
-                              delay: categoryIndex * 0.2,
-                              ease: "easeOut" 
-                            }}
-                            viewport={{ once: true }}
-                          />
-                        </div>
-                      </div>
+
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -168,48 +149,7 @@ export default function Skills() {
             })}
           </div>
 
-          {/* Additional Skills Summary */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-16 text-center"
-          >
-            <Card className="glass border-primary/20 max-w-4xl mx-auto">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-4">
-                  Additional Competencies
-                </h3>
-                <div className="grid md:grid-cols-3 gap-6 text-sm text-muted-foreground">
-                  <div>
-                    <h4 className="font-medium text-foreground mb-2">Development Practices</h4>
-                    <ul className="space-y-1">
-                      <li>• Agile & Scrum Methodologies</li>
-                      <li>• Test-Driven Development</li>
-                      <li>• CI/CD Pipeline Design</li>
-                      <li>• Code Review & Documentation</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-foreground mb-2">System Design</h4>
-                    <ul className="space-y-1">
-                      <li>• Microservices Architecture</li>
-                      <li>• RESTful API Design</li>
-                      <li>• Database Optimization</li>
-                      <li>• Caching Strategies</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-foreground mb-2">Problem Solving</h4>
-                    <ul className="space-y-1">
-                      <li>• Algorithm Optimization</li>
-                      <li>• Competitive Programming</li>
-                      <li>• Performance Tuning</li>
-                      <li>• Debugging & Troubleshooting</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
+
         </motion.div>
       </div>
     </section>
