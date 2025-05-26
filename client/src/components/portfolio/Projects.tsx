@@ -13,7 +13,7 @@ import {
   Search
 } from "lucide-react";
 import { useScrollSection } from "@/hooks/useScrollSection";
-import { projects } from "@/lib/portfolioData";
+import { projects, personalInfo } from "@/lib/portfolioData";
 
 const categoryIcons = {
   web: Globe,
