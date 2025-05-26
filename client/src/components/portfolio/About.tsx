@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useScrollSection } from "@/hooks/useScrollSection";
 import { personalInfo } from "@/lib/portfolioData";
+import { Linkedin, ExternalLink } from "lucide-react";
 
 export default function About() {
   const ref = useScrollSection("about");
@@ -84,20 +85,12 @@ export default function About() {
                   {/* Quick Facts */}
                   <div className="mt-8 grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
-                      <div className="text-2xl font-bold text-primary">9.06</div>
-                      <div className="text-sm text-muted-foreground">CGPA</div>
-                    </div>
-                    <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
-                      <div className="text-2xl font-bold text-primary">1752</div>
-                      <div className="text-sm text-muted-foreground">LeetCode Rating</div>
-                    </div>
-                    <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
-                      <div className="text-2xl font-bold text-primary">800+</div>
-                      <div className="text-sm text-muted-foreground">Problems Solved</div>
-                    </div>
-                    <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
-                      <div className="text-2xl font-bold text-primary">4+</div>
+                      <div className="text-2xl font-bold text-primary">8+</div>
                       <div className="text-sm text-muted-foreground">Major Projects</div>
+                    </div>
+                    <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
+                      <div className="text-2xl font-bold text-primary">1000+</div>
+                      <div className="text-sm text-muted-foreground">PyPI Users</div>
                     </div>
                   </div>
                 </CardContent>
@@ -109,7 +102,7 @@ export default function About() {
               <h3 className="text-2xl font-semibold mb-6">Relevant Links</h3>
               
               <div className="grid gap-4">
-                {/* LeetCode */}
+                {/* LinkedIn */}
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.02 }}
@@ -119,27 +112,25 @@ export default function About() {
                     <CardContent className="p-6">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                          <div className="w-12 h-12 bg-orange-500/10 rounded-lg flex items-center justify-center mr-4">
-                            <span className="text-orange-500 font-bold text-lg">LC</span>
+                          <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mr-4">
+                            <Linkedin className="w-6 h-6 text-blue-500" />
                           </div>
                           <div>
                             <h4 className="font-semibold text-lg group-hover:text-primary transition-colors">
-                              LeetCode Profile
+                              LinkedIn Profile
                             </h4>
                             <p className="text-muted-foreground text-sm">
-                              500+ Problems Solved • Rating: 1752
+                              Professional Network • Connect with me
                             </p>
                           </div>
                         </div>
                         <a
-                          href={`https://${personalInfo.leetcode}`}
+                          href={`https://${personalInfo.linkedin}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 transition-colors"
                         >
-                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7v10c0 5.55 3.84 10 9 10s9-4.45 9-10V7l-10-5z"/>
-                          </svg>
+                          <ExternalLink className="w-5 h-5" />
                         </a>
                       </div>
                     </CardContent>

@@ -49,7 +49,8 @@ export const personalInfo = {
   location: "Kottayam, Kerala, India",
   github: "github.com/ZEUS33776",
   leetcode: "leetcode.com/u/ZEUS",
-  bio: "Passionate Software Engineer with expertise in full-stack development, AI/ML, and system design. Currently pursuing B.Tech in Computer Science at IIIT Kottayam with a CGPA of 9.06/10. Experienced in building scalable solutions and optimizing complex systems.",
+  linkedin: "linkedin.com/in/arjun-deshmukh-8a45842a5",
+  bio: "Passionate Software Engineer with expertise in full-stack development, AI/ML, and system design. Currently pursuing B.Tech in Computer Science at IIIT Kottayam.",
   tagline: "Building the future with code and creativity"
 };
 
@@ -98,7 +99,7 @@ export const projects: Project[] = [
     ],
     links: {
       github: "https://github.com/ZEUS33776/lyfline",
-      live: "https://lyfline-demo.vercel.app"
+      live: "https://lyfline.onrender.com/"
     },
     stats: [
       { label: "New Patient Accuracy", value: "87%" },
@@ -111,24 +112,22 @@ export const projects: Project[] = [
     id: "placement-portal",
     title: "Institute Placement Portal",
     description: "Modern React-based placement management system",
-    longDescription: "Comprehensive institutional placement portal with modern React architecture, featuring role-based access control and streamlined workflow management for students, coordinators, and administrators.",
+    longDescription: "Comprehensive institutional placement portal with modern React architecture, featuring role-based access control and streamlined workflow management for students, coordinators, and administrators. Will be officially used by the college in upcoming placement drives.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
     features: [
-      "65% improvement in student application efficiency",
-      "40% increase in company participation",
+      "Streamlined placement workflow",
       "JWT authentication system",
       "500+ student registrations processed",
       "Role-based access control",
-      "50% streamlined placement workflow",
-      "Secure recruitment data protection"
+      "Secure recruitment data protection",
+      "Will be officially used by college"
     ],
     links: {
       github: "https://github.com/ZEUS33776/placement-portal"
     },
     stats: [
-      { label: "Efficiency Improvement", value: "65%" },
-      { label: "Company Participation", value: "+40%" },
-      { label: "Students Registered", value: "500+" }
+      { label: "Students Registered", value: "500+" },
+      { label: "Authentication", value: "JWT" }
     ],
     category: "web"
   },
@@ -185,12 +184,9 @@ export const experience: Experience[] = [
     location: "Kottayam, Kerala",
     duration: "Nov 2022 – March 2026",
     type: "education",
-    cgpa: "9.06/10",
     achievements: [
-      "Maintaining excellent academic performance with CGPA of 9.06/10",
-      "Active participation in competitive programming and algorithm optimization",
-      "Research work on Advanced Analysis of the Maximum Subarray Problem (2D)",
-      "Contributing to academic discourse on multidimensional array optimization"
+      "Maintaining excellent academic performance",
+      "Active participation in competitive programming and algorithm optimization"
     ]
   }
 ];
@@ -230,19 +226,9 @@ export const skills: Skill[] = [
 
 export const achievements: Achievement[] = [
   {
-    title: "LeetCode Rating",
-    description: "Achieved 1752 rating, placing among top competitive programmers",
-    metric: "1752"
-  },
-  {
-    title: "Problems Solved",
-    description: "Solved 300+ problems on LeetCode and 500+ across all platforms",
-    metric: "800+"
-  },
-  {
-    title: "Contest Performance",
-    description: "Placed in top 3% among 28,000 participants in LeetCode Contest 151",
-    metric: "Top 3%"
+    title: "Major Projects",
+    description: "Built and deployed 8+ major full-stack applications",
+    metric: "8+"
   },
   {
     title: "Open Source Contribution",

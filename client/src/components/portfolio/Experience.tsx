@@ -191,17 +191,12 @@ export default function Experience() {
                               <Calendar className="w-3 h-3 mr-1" />
                               {exp.duration}
                             </Badge>
-                            {exp.cgpa && (
-                              <div className="text-sm text-muted-foreground">
-                                CGPA: {exp.cgpa}
-                              </div>
-                            )}
                           </div>
                         </div>
 
                         {/* Simple education description */}
                         <div className="text-sm text-muted-foreground">
-                          <p>Currently pursuing Bachelor of Technology in Computer Science and Engineering with strong academic performance.</p>
+                          <p>Currently pursuing Bachelor of Technology in Computer Science and Engineering with focus on software development and system design.</p>
                         </div>
                       </CardContent>
                     </Card>

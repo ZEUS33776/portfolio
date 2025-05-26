@@ -101,6 +101,13 @@ export default function Contact() {
       value: personalInfo.github,
       href: `https://${personalInfo.github}`,
       color: "text-gray-500"
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "Arjun Deshmukh",
+      href: `https://${personalInfo.linkedin}`,
+      color: "text-blue-600"
     }
   ];
 
@@ -206,12 +213,12 @@ export default function Contact() {
                   </Button>
                   <Button variant="outline" asChild>
                     <a
-                      href={`https://${personalInfo.leetcode}`}
+                      href={`https://${personalInfo.linkedin}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      LeetCode
+                      <Linkedin className="w-4 h-4 mr-2" />
+                      LinkedIn
                     </a>
                   </Button>
                 </div>
@@ -327,7 +334,7 @@ export default function Contact() {
             className="mt-20 pt-8 border-t border-border/50 text-center"
           >
             <p className="text-muted-foreground">
-              © 2024 {personalInfo.name}. Built with React, Three.js, and lots of ☕
+              Built with React, Three.js, and lots of ☕
             </p>
           </motion.div>
         </motion.div>
