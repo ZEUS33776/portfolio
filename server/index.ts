@@ -1,10 +1,37 @@
 import express, { type Request, Response, NextFunction } from "express";
+import path from "path";
+import cors from "cors";
+import dotenv from "dotenv";
+import { fileURLToPath } from 'url';
+import contactRouter from "./routes/contact";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
+// Load environment variables
+dotenv.config();
+
+// ES Module compatibility
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middleware
+app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+
+// Routes
+app.use("/api/contact", contactRouter);
+
+// Serve static files
+app.use(express.static(path.join(__dirname, "../dist/public")));
+
+// Serve index.html for all routes (SPA)
+app.get("*", (req: Request, res: Response) => {
+  res.sendFile(path.join(__dirname, "../dist/public/index.html"));
+});
 
 app.use((req, res, next) => {
   const start = Date.now();
@@ -58,12 +85,7 @@ app.use((req, res, next) => {
 
   // ALWAYS serve the app on port 5000
   // this serves both the API and the client
-  const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
+  app.listen(PORT, () => {
+    log(`serving on port ${PORT}`);
   });
 })();

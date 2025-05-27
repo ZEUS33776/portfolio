@@ -46,7 +46,7 @@ export const personalInfo = {
   title: "Software Engineer",
   email: "desh.arjun3@gmail.com",
   phone: "9561135575",
-  location: "Kottayam, Kerala, India",
+  location: "Washim, Maharashtra, India",
   github: "github.com/ZEUS33776",
   leetcode: "leetcode.com/u/ZEUS",
   linkedin: "linkedin.com/in/arjun-deshmukh-8a45842a5",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     features: [
       "Streamlined placement workflow",
       "JWT authentication system",
-      "500+ student registrations processed",
+  
       "Role-based access control",
       "Secure recruitment data protection",
       "Will be officially used by college"
@@ -126,7 +126,7 @@ export const projects: Project[] = [
       github: "https://github.com/ZEUS33776/placement-portal"
     },
     stats: [
-      { label: "Students Registered", value: "500+" },
+      { label: "Students to be registered", value: "500+" },
       { label: "Authentication", value: "JWT" }
     ],
     category: "web"
@@ -185,7 +185,6 @@ export const experience: Experience[] = [
     duration: "Nov 2022 – March 2026",
     type: "education",
     achievements: [
-      "Maintaining excellent academic performance",
       "Active participation in competitive programming and algorithm optimization"
     ]
   }

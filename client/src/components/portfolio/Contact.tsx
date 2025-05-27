@@ -48,7 +48,7 @@ export default function Contact() {
     },
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     // Basic form validation
@@ -60,11 +60,12 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission (replace with actual API call)
+      // Simulate form submission
       await new Promise(resolve => setTimeout(resolve, 1500));
       
-      setIsSubmitted(true);
+      // Clear form
       resetContactForm();
+      setIsSubmitted(true);
       toast.success("Message sent successfully! I'll get back to you soon.");
     } catch (error) {
       toast.error("Failed to send message. Please try again.");

@@ -48,12 +48,12 @@ export default function About() {
             <Badge variant="outline" className="mb-4">
               About Me
             </Badge>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-              Building the Future with{" "}
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+            Transforming ideas into impactful solutions through{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Code & Creativity
               </span>
-            </h2>
+            </h3>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -89,8 +89,8 @@ export default function About() {
                       <div className="text-sm text-muted-foreground">Major Projects</div>
                     </div>
                     <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
-                      <div className="text-2xl font-bold text-primary">1000+</div>
-                      <div className="text-sm text-muted-foreground">PyPI Users</div>
+                      <div className="text-2xl font-bold text-primary">500+</div>
+                      <div className="text-sm text-muted-foreground">Problems Solved on coding platforms.</div>
                     </div>
                   </div>
                 </CardContent>

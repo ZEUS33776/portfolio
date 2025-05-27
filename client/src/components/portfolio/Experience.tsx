@@ -195,6 +195,10 @@ export default function Experience() {
 
                         {/* Simple education description */}
                         <div className="text-sm text-muted-foreground">
+                          <div className="flex items-center gap-2 mb-2">
+                            <Star className="w-4 h-4 text-yellow-500" />
+                            <span className="font-medium text-base">CGPA: 9.06</span>
+                          </div>
                           <p>Currently pursuing Bachelor of Technology in Computer Science and Engineering with focus on software development and system design.</p>
                         </div>
                       </CardContent>
