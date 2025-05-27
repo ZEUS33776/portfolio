@@ -81,8 +81,7 @@ export default function About() {
                       into impactful software.
                     </p>
                   </div>
-
-                  {/* Quick Facts */}
+                  {/* Quick Facts below */}
                   <div className="mt-8 grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-primary/5 rounded-lg border border-primary/10">
                       <div className="text-2xl font-bold text-primary">8+</div>
