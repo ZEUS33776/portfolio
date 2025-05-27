@@ -93,10 +93,10 @@ export default function Hero() {
           
           <Button variant="outline" size="lg" className="min-w-[160px]" asChild>
             <a
-              href="/public/attached_assets/resume.pdf"
+              href="/attached_assets/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              download
+              download="Arjun_Deshmukh_Resume.pdf"
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV
