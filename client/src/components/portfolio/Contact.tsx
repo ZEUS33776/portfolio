@@ -13,7 +13,8 @@ import {
   Linkedin, 
   Send,
   CheckCircle,
-  ExternalLink
+  ExternalLink,
+  Code
 } from "lucide-react";
 import { useScrollSection } from "@/hooks/useScrollSection";
 import { usePortfolio } from "@/lib/stores/usePortfolio";
@@ -102,6 +103,13 @@ export default function Contact() {
       value: personalInfo.github,
       href: `https://${personalInfo.github}`,
       color: "text-gray-500"
+    },
+    {
+      icon: Code,
+      label: "LeetCode",
+      value: "ZEUS_7",
+      href: `https://${personalInfo.leetcode}`,
+      color: "text-yellow-500"
     },
     {
       icon: Linkedin,
@@ -210,6 +218,16 @@ export default function Contact() {
                     >
                       <Github className="w-4 h-4 mr-2" />
                       GitHub
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href={`https://${personalInfo.leetcode}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Code className="w-4 h-4 mr-2" />
+                      LeetCode
                     </a>
                   </Button>
                   <Button variant="outline" asChild>

@@ -48,7 +48,7 @@ export const personalInfo = {
   phone: "9561135575",
   location: "Washim, Maharashtra, India",
   github: "github.com/ZEUS33776",
-  leetcode: "leetcode.com/u/ZEUS",
+  leetcode: "leetcode.com/u/ZEUS_7",
   linkedin: "linkedin.com/in/arjun-deshmukh-8a45842a5",
   bio: "Passionate Software Engineer with expertise in full-stack development, AI/ML, and system design. Currently pursuing B.Tech in Computer Science at IIIT Kottayam.",
   tagline: "Building the future with code and creativity"

@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useScrollSection } from "@/hooks/useScrollSection";
 import { personalInfo } from "@/lib/portfolioData";
-import { Linkedin, ExternalLink } from "lucide-react";
+import { Linkedin, ExternalLink, Code } from "lucide-react";
 
 export default function About() {
   const ref = useScrollSection("about");
@@ -71,7 +71,7 @@ export default function About() {
                     <p>
                       Currently working as a Software Engineering Intern at Xcdify Solutions, 
                       where I'm developing enterprise-grade solutions and contributing to 
-                      data-driven decision making across multiple agile sprints.
+                      data-driven decision making.
                     </p>
                     <p>
                       My passion lies in creating innovative solutions that bridge the gap 
@@ -126,6 +126,41 @@ export default function About() {
                         </div>
                         <a
                           href={`https://${personalInfo.linkedin}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:text-primary/80 transition-colors"
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                {/* LeetCode */}
+                <motion.div
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02 }}
+                  className="group"
+                >
+                  <Card className="glass border-primary/20 hover:border-primary/40 transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center">
+                          <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mr-4">
+                            <Code className="w-6 h-6 text-yellow-500" />
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-lg group-hover:text-primary transition-colors">
+                              LeetCode Profile
+                            </h4>
+                            <p className="text-muted-foreground text-sm">
+                              Coding Platform • Problem Solving
+                            </p>
+                          </div>
+                        </div>
+                        <a
+                          href={`https://${personalInfo.leetcode}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 transition-colors"
