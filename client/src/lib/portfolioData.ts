@@ -71,7 +71,7 @@ export const projects: Project[] = [
       "Complete documentation and unit tests"
     ],
     links: {
-      github: "https://github.com/ZEUS33776/vcs-core",
+      github: "https://github.com/ZEUS33776/vcs",
       pypi: "https://pypi.org/project/vcs-core/"
     },
     stats: [
@@ -123,7 +123,7 @@ export const projects: Project[] = [
       "Will be officially used by college"
     ],
     links: {
-      github: "https://github.com/ZEUS33776/placement-portal"
+      github: "https://github.com/ZEUS33776/placement-portal-iiitk"
     },
     stats: [
       { label: "Students to be registered", value: "500+" },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
       "Context-aware processing"
     ],
     links: {
-      github: "https://github.com/ZEUS33776/excel-pdf-query"
+      github: "https://github.com/ZEUS33776/PDF-s-Queries-using-Local-RAG-LLM-chatbot"
     },
     stats: [
       { label: "Query Types Supported", value: "100+" },
