@@ -83,13 +83,7 @@ export default function Contact() {
       href: `mailto:${personalInfo.email}`,
       color: "text-blue-500"
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: personalInfo.phone,
-      href: `tel:${personalInfo.phone}`,
-      color: "text-emerald-500"
-    },
+    
     {
       icon: MapPin,
       label: "Location",

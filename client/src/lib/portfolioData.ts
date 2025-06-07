@@ -45,7 +45,6 @@ export const personalInfo = {
   name: "Arjun Deshmukh",
   title: "Software Engineer",
   email: "desh.arjun3@gmail.com",
-  phone: "9561135575",
   location: "Washim, Maharashtra, India",
   github: "github.com/ZEUS33776",
   leetcode: "leetcode.com/u/ZEUS_7",
@@ -86,7 +85,7 @@ export const projects: Project[] = [
     title: "Lyfline",
     description: "AI-Powered Heart Attack Prediction",
     longDescription: "Comprehensive heart condition prediction system combining multiple machine learning models with real-time patient monitoring capabilities and secure hospital database integration.",
-    technologies: ["Python", "Machine Learning", "React", "Node.js", "Django", "PostgreSQL"],
+    technologies: ["Python", "Machine Learning", "React", "Node.js", "PostgreSQL"],
     features: [
       "87% accuracy for new patient risk assessment",
       "97% accuracy for monitoring admitted patients",

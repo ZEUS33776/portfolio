@@ -226,10 +226,7 @@ export default function About() {
                         {personalInfo.email}
                       </a>
                     </div>
-                    <div className="flex items-center">
-                      <span className="w-16">Phone:</span>
-                      <span>{personalInfo.phone}</span>
-                    </div>
+                    
                     <div className="flex items-center">
                       <span className="w-16">Location:</span>
                       <span>{personalInfo.location}</span>
