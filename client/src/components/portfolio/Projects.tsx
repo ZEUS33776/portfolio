@@ -28,7 +28,7 @@ const categoryColors = {
   ml: "bg-purple-500/10 text-purple-500 border-purple-500/20",
   system: "bg-cyan-500/10 text-cyan-500 border-cyan-500/20",
   research: "bg-emerald-500/10 text-emerald-500 border-emerald-500/20",
-  "web+ai": "bg-indigo-500/20 text-indigo-700 border-indigo-500/30",
+  "web+ai": "bg-indigo-600/30 text-indigo-100 border-indigo-400/50",
 };
 
 export default function Projects() {

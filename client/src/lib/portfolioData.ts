@@ -77,7 +77,7 @@ export const projects: Project[] = [
     stats: [
       { label: "Full-Stack", value: "Complete" },
       { label: "User Management", value: "JWT Auth" },
-      { label: "RAG", value: "Tracked" }
+      { label: "RAG", value: "RAG" }
     ],
     category: "web+ai"
   },
