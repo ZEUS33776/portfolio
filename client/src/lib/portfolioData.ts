@@ -14,7 +14,7 @@ export interface Project {
     label: string;
     value: string;
   }[];
-  category: 'web' | 'ml' | 'system' | 'research';
+  category: 'web' | 'ml' | 'system' | 'research' | 'web+ai';
 }
 
 export interface Experience {
@@ -56,30 +56,30 @@ export const personalInfo = {
 export const projects: Project[] = [
   {
     id: "distill",
-    title: "Distill - AI-Powered Document Processing Platform",
-    description: "Modern web application for intelligent document processing and AI-powered chat interactions",
-    longDescription: "A comprehensive platform that allows users to upload documents (PDFs) and YouTube videos, process them using AI, and interact with the content through an intelligent chat interface. Features dynamic quiz and flashcard generation from uploaded content.",
-    technologies: ["React 19", "FastAPI", "PostgreSQL", "Cohere AI", "Groq", "Pinecone", "Tailwind CSS", "Framer Motion"],
+    title: "Distill – AI-Powered Document & Video Learning Platform",
+    description: "Full-stack AI platform with user authentication, performance tracking, and intelligent learning analytics",
+    longDescription: "Distill is a comprehensive full-stack AI platform that allows users to upload PDFs and YouTube videos, processes them with vector embeddings and LLMs, and enables smart, contextual interaction via chat, quizzes, and flashcards. Features complete user management with JWT authentication, performance tracking, and learning analytics. Uses lama-4-scout-17b-16e-instruct for high-performance inference and Groq for blazing-fast response generation.",
+    technologies: ["React 19", "FastAPI", "PostgreSQL", "JWT Auth", "Cohere AI", "Groq", "Pinecone", "Tailwind CSS", "Framer Motion"],
     features: [
-      "Dynamic quiz generation from uploaded documents",
-      "Interactive flashcards creation for better learning",
-      "PDF upload and intelligent text processing",
-      "AI-powered contextual conversations",
-      "Real-time responses with Groq's fast inference API",
-      "Vector embeddings using Cohere AI",
-      "Secure JWT-based authentication system",
-      "YouTube transcript extraction and processing"
+      "Complete user authentication system with JWT-based login and namespace isolation",
+      "Performance tracking: quiz scores, flashcard performance, session duration, and studying activity analytics",
+      "Dynamic quiz and flashcard generation with real-time performance comparison",
+      "Intelligent content ingestion: PDF extraction (PyPDF2, PyMuPDF) and YouTube processing (yt-dlp, transcript-api)",
+      "Vector search using Cohere embeddings + Pinecone vector DB for semantic chunk retrieval",
+      "Contextual chat with persistent session history and isolated user conversations",
+      "Real-time learning progress tracking with user achievements and performance metrics",
+      "Full-stack architecture: React 19 frontend, FastAPI backend, PostgreSQL database with async support"
     ],
     links: {
       github: "https://github.com/ZEUS33776/Distill--AI-powered-study-assistant",
       live: "https://distill-frontend-dj2j.onrender.com"
     },
     stats: [
-      { label: "Full-Stack", value: "Production" },
-      { label: "AI Services", value: "3+" },
-      { label: "Study Tools", value: "Quiz+Cards" }
+      { label: "Full-Stack", value: "Complete" },
+      { label: "User Management", value: "JWT Auth" },
+      { label: "AI Performance", value: "Tracked" }
     ],
-    category: "ml"
+    category: "web+ai"
   },
   {
     id: "vcs-core",
@@ -226,8 +226,8 @@ export const skills: Skill[] = [
 export const achievements: Achievement[] = [
   {
     title: "Major Projects",
-    description: "Built and deployed 8+ major full-stack applications",
-    metric: "8+"
+    description: "Built and deployed 9+ major full-stack applications with advanced features",
+    metric: "9+"
   },
   {
     title: "Open Source Contribution",

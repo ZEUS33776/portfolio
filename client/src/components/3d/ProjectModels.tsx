@@ -32,7 +32,8 @@ function ProjectModel({ project, position, index }: ProjectModelProps) {
     web: "#3b82f6",
     ml: "#8b5cf6", 
     system: "#06b6d4",
-    research: "#10b981"
+    research: "#10b981",
+    "web+ai": "#6366f1" // Indigo color representing the blend of web (blue) and AI (purple)
   };
 
   const color = categoryColors[project.category];
