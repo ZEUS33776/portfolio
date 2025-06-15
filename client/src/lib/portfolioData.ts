@@ -129,32 +129,6 @@ export const projects: Project[] = [
       { label: "Authentication", value: "JWT" }
     ],
     category: "web"
-  },
-  {
-    id: "excel-pdf-query",
-    title: "Excel and PDF Natural Language Query System",
-    description: "RAG-powered document analysis with LLM",
-    longDescription: "Interactive system enabling natural language queries on Excel sheets and PDFs using Retrieval-Augmented Generation (RAG) with locally running Ollama and Mistral LLM.",
-    technologies: ["RAG", "Mistral LLM", "Ollama", "Python", "LangChain", "NLP"],
-    features: [
-      "Natural language document querying",
-      "Retrieval-Augmented Generation approach",
-      "Locally running Ollama and Mistral LLM",
-      "Automatic Python code generation",
-      "100+ query types supported",
-      "Statistical analysis capabilities",
-      "Semantic search functionality",
-      "Context-aware processing"
-    ],
-    links: {
-      github: "https://github.com/ZEUS33776/PDF-s-Queries-using-Local-RAG-LLM-chatbot"
-    },
-    stats: [
-      { label: "Query Types Supported", value: "100+" },
-      { label: "Processing Method", value: "RAG" },
-      { label: "Code Generation", value: "Automatic" }
-    ],
-    category: "ml"
   }
 ];
 
