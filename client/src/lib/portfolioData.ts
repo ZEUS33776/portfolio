@@ -55,6 +55,33 @@ export const personalInfo = {
 
 export const projects: Project[] = [
   {
+    id: "distill",
+    title: "Distill - AI-Powered Document Processing Platform",
+    description: "Modern web application for intelligent document processing and AI-powered chat interactions",
+    longDescription: "A comprehensive platform that allows users to upload documents (PDFs) and YouTube videos, process them using AI, and interact with the content through an intelligent chat interface. Features dynamic quiz and flashcard generation from uploaded content.",
+    technologies: ["React 19", "FastAPI", "PostgreSQL", "Cohere AI", "Groq", "Pinecone", "Tailwind CSS", "Framer Motion"],
+    features: [
+      "Dynamic quiz generation from uploaded documents",
+      "Interactive flashcards creation for better learning",
+      "PDF upload and intelligent text processing",
+      "AI-powered contextual conversations",
+      "Real-time responses with Groq's fast inference API",
+      "Vector embeddings using Cohere AI",
+      "Secure JWT-based authentication system",
+      "YouTube transcript extraction and processing"
+    ],
+    links: {
+      github: "https://github.com/ZEUS33776/Distill--AI-powered-study-assistant",
+      live: "https://distill-frontend-dj2j.onrender.com"
+    },
+    stats: [
+      { label: "Full-Stack", value: "Production" },
+      { label: "AI Services", value: "3+" },
+      { label: "Study Tools", value: "Quiz+Cards" }
+    ],
+    category: "ml"
+  },
+  {
     id: "vcs-core",
     title: "VCS-Core",
     description: "Distributed Version Control System",
