@@ -97,7 +97,118 @@ export default function About() {
               </Card>
             </motion.div>
 
-            {/* Relevant Links */}
+            {/* Featured Project - Distill */}
+            <motion.div variants={itemVariants} className="lg:col-span-2">
+              <div className="text-center mb-8">
+                <Badge variant="outline" className="mb-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 border-blue-500/20">
+                  Featured Project
+                </Badge>
+                <h3 className="text-2xl font-semibold mb-6">My Best Work</h3>
+              </div>
+              
+              <Card className="glass border-primary/30 bg-gradient-to-br from-blue-500/5 to-purple-500/5 hover:border-primary/50 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-start justify-between mb-6">
+                    <div>
+                      <h4 className="text-2xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                        Distill - AI-Powered Document Processing Platform
+                      </h4>
+                      <p className="text-muted-foreground">
+                        A modern web application for intelligent document processing and AI-powered chat interactions
+                      </p>
+                    </div>
+                    <div className="flex gap-3">
+                      <a
+                        href="https://distill-frontend-dj2j.onrender.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Live Demo
+                      </a>
+                      <a
+                        href="https://github.com/ZEUS33776/Distill--AI-powered-study-assistant"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 border border-primary/20 rounded-lg hover:bg-primary/10 transition-colors text-sm font-medium"
+                      >
+                        <Code className="w-4 h-4" />
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {/* Key Features */}
+                    <div>
+                      <h5 className="font-semibold mb-4 text-primary">Key Features</h5>
+                      <ul className="space-y-3 text-sm text-muted-foreground">
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span><strong className="text-foreground">PDF Processing:</strong> Upload documents with intelligent chunking and vector embeddings</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span><strong className="text-foreground">AI Chat Interface:</strong> Contextual conversations powered by Groq's fast inference API</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-green-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span><strong className="text-foreground">Video Processing:</strong> YouTube transcript extraction and processing</span>
+                        </li>
+                        <li className="flex items-start">
+                          <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                          <span><strong className="text-foreground">Secure Authentication:</strong> JWT-based user system with isolated namespaces</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Tech Stack & Achievements */}
+                    <div>
+                      <h5 className="font-semibold mb-4 text-primary">Tech Stack & Achievements</h5>
+                      <div className="space-y-4">
+                        <div>
+                          <p className="text-sm text-muted-foreground mb-2">
+                            <strong className="text-foreground">Frontend:</strong> React 19, Vite, Tailwind CSS, Framer Motion
+                          </p>
+                          <p className="text-sm text-muted-foreground mb-2">
+                            <strong className="text-foreground">Backend:</strong> FastAPI, PostgreSQL, Vector Databases
+                          </p>
+                          <p className="text-sm text-muted-foreground mb-4">
+                            <strong className="text-foreground">AI Services:</strong> Cohere AI, Groq, Pinecone, Custom Algorithms
+                          </p>
+                        </div>
+                        
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="text-center p-3 bg-primary/5 rounded-lg border border-primary/10">
+                            <div className="text-lg font-bold text-primary">Full-Stack</div>
+                            <div className="text-xs text-muted-foreground">End-to-End Development</div>
+                          </div>
+                          <div className="text-center p-3 bg-primary/5 rounded-lg border border-primary/10">
+                            <div className="text-lg font-bold text-primary">Production</div>
+                            <div className="text-xs text-muted-foreground">Deployed on Render</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Impact Statement */}
+                  <div className="mt-6 p-4 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg border border-primary/10">
+                    <p className="text-sm text-muted-foreground italic">
+                      "This project showcases my ability to integrate multiple AI services, handle complex data processing pipelines, 
+                      and create intuitive user experiences. It demonstrates proficiency in modern web technologies, 
+                      AI/ML integration, and production deployment."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+
+          {/* Relevant Links Section */}
+          <div className="grid lg:grid-cols-2 gap-12 mt-16">
+            <div></div> {/* Empty div for spacing */}
             <motion.div variants={itemVariants} className="space-y-6">
               <h3 className="text-2xl font-semibold mb-6">Relevant Links</h3>
               
