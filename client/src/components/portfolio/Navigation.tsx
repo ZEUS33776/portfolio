@@ -187,7 +187,7 @@ export default function Navigation() {
               {/* Contact Info */}
               <div className="mt-auto mb-8 text-sm text-muted-foreground">
                 <p>{personalInfo.email}</p>
-                <p>{personalInfo.phone}</p>
+                
                 <p>{personalInfo.location}</p>
               </div>
             </div>

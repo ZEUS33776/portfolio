@@ -49,8 +49,8 @@ export const personalInfo = {
   github: "github.com/ZEUS33776",
   leetcode: "leetcode.com/u/ZEUS_7",
   linkedin: "linkedin.com/in/arjun-deshmukh-8a45842a5",
-  bio: "Passionate Software Engineer with expertise in full-stack development, AI/ML, and system design. Currently pursuing B.Tech in Computer Science at IIIT Kottayam.",
-  tagline: "Building the future with code and creativity"
+  bio: "Exploring how modern web apps can be more interactive, intelligent, and user-centered. Full-stack dev | B.Tech CSE @ IIIT Kottayam.",
+  tagline: "Trying, tweaking, and building something better"
 };
 
 export const projects: Project[] = [

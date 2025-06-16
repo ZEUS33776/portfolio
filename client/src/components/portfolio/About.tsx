@@ -49,9 +49,9 @@ export default function About() {
               About Me
             </Badge>
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Transforming ideas into impactful solutions through{" "}
+            Turning ideas into impactful solutions through{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Code & Creativity
+                Code & Curiosity.
               </span>
             </h3>
           </motion.div>
