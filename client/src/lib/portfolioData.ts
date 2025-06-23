@@ -193,12 +193,12 @@ export const experience: Experience[] = [
 export const skills: Skill[] = [
   {
     category: "Programming Languages",
-    skills: ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "SQL", "Bash"],
+    skills: ["Python", "Java", "C", "C++", "JavaScript", "SQL", "Bash"],
     icon: "code"
   },
   {
     category: "Frontend Development",
-    skills: ["React.js", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS", "Three.js"],
+    skills: ["React.js", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS"],
     icon: "monitor"
   },
   {
@@ -208,17 +208,17 @@ export const skills: Skill[] = [
   },
   {
     category: "Databases & Cloud",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS", "GCP", "Firebase", "Supabase"],
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS", "GCP", "Supabase"],
     icon: "database"
   },
   {
     category: "AI & Machine Learning",
-    skills: ["Scikit-Learn", "TensorFlow", "Pandas", "NumPy", "LangChain", "RAG", "NLP", "Deep Learning"],
+    skills: ["Scikit-Learn","Pandas", "NumPy", "LangChain", "RAG"],
     icon: "brain"
   },
   {
     category: "Tools & Technologies",
-    skills: ["Git", "GitHub", "Docker", "CI/CD", "Redis Queue", "DBT", "Shell Scripting"],
+    skills: ["Git", "GitHub", "Docker", "CI/CD", "Redis Queue", "DBT"],
     icon: "tool"
   }
 ];
